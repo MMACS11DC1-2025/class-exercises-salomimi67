@@ -18,7 +18,7 @@ car_5 = ["Ford F-Series", "Chevrolet Silverado", "Toyota RAV4", "Honda CR-V", "T
 score = 0
 
 # explain the game to the player and tell them how the game works
-print("Hi, let's play a game, wher you have to guess the top 5 most sold cars in 2024. Every time you guess a car correctly your score gets boosted by one point. Your starting score is 0.")
+print("Hi, let's play a game, wher you have to guess the top 5 most sold cars in 2024. Every time you guess a car correctly your score gets boosted by one point of you guess it incorrectly then your score gets dropped by one. Your starting score is 0.")
 
 # ask them to guess
 print("Guess one of the cars that you think was the top 5 most sold cars in 2024?")
@@ -32,7 +32,8 @@ if guess_1 in car_5:
     score = score + 1
     
 else: 
-    print("You got " + guess_1 + " incorrect! Your score is still " + score + ".")
+    print("You got " + guess_1 + " incorrect! Your score is " + score + ".")
+    score = score - 1
     
 print("Guess another car that you think is in the top 5 most sold cars in 2024?")
 
@@ -44,7 +45,8 @@ if guess_2 in car_5:
     score = score + 1
     
 else: 
-    print("You got " + guess_2 + " incorrect! Your score is still " + score + ".")
+    print("You got " + guess_2 + " incorrect! Your score is " + score + ".")
+    score = score - 1
     
 guess_3 = input()
 
@@ -54,7 +56,8 @@ if guess_3 in car_5:
     score = score + 1
     
 else: 
-    print("You got " + guess_3 + " incorrect! Your score is still " + score + ".")
+    print("You got " + guess_3 + " incorrect! Your score is " + score + ".")
+    score = score - 1
     
 print("Guess another car that you think is in the top 5 most sold cars in 2024?")
 
@@ -66,7 +69,8 @@ if guess_4 in car_5:
     score = score + 1
     
 else: 
-    print("You got " + guess_4 + " incorrect! Your score is still " + score + ".")
+    print("You got " + guess_4 + " incorrect! Your score is " + score + ".")
+    score = score - 1
     
 print("Guess another car that you think is in the top 5 most sold cars in 2024?")
 
@@ -78,8 +82,9 @@ if guess_5 in car_5:
     score = score + 1
     
 else: 
-    print("You got " + guess_5 + " incorrect! Your score is still " + score + ". Now we are going to show your final score!")
-    
+    print("You got " + guess_5 + " incorrect! Your score is  " + score + ". Now we are going to show your final score!")
+    score = score - 1
+
 print("Your score is " + str(score) + ". Can we ask you a question about our game, reply yes or no.")
 
 question = ["Do you like this game, can you rate out of 100?", "Rate this game from 1 to 100", "How good was this game out of 100?"]
