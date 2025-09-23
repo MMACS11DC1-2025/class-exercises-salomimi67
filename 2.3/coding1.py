@@ -12,7 +12,7 @@ How old are you?
 In 2056, you will be 56 years old!
 """
 print("How old are you?")
-age = int().input()
+age = int(input())
 
 age = age + 24
-print("In 2056, you will be " + age + " years old!")
+print("In 2056, you will be " + str(age) + " years old!")
