@@ -66,7 +66,7 @@ if point > most_point:
 print(most_common + " is the person with the most common similarities to you accordign to my data")
 if most_point == 8:
     print("You guys have 8 similar intrests.")
-elif most_point <= 7 or most_point >= 6:
+elif most_point <= 7 and most_point >= 6:
     print("You guys have about 6-7 similar intrests.")
 elif most_point <= 5 or most_point >= 4:
     print("You guys have 4-5 similar intrests.")
